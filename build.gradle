@@ -56,6 +56,19 @@ task wrapper(type: Wrapper) {
     gradleVersion = gradleWrapperVersion
 }
 
+grailsPublish {
+    // TODO: Provide values here
+    githubSlug = 'jeetmp3/spring-session'
+    license {
+        name = 'Apache-2.0'
+    }
+    title = "Spring Session Grails Plugin"
+    desc = "Provides support for SpringSession project"
+    developers = [jeetmp3:"Jitendra Singh"]
+    portalUser = ""
+    portalPassword = ""
+}
+
 task copyToLocalRepo(type: Copy){
     def localMaven = new File(System.getProperty('user.home'), '.m2/repository').absolutePath
     into "$projectDir/repository"
