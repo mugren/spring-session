@@ -31,12 +31,12 @@ class SpringSessionGrailsPlugin extends Plugin {
 
     Closure doWithSpring() {
         { ->
-            log.info 'Configuring Spring session'
+            println 'Configuring Spring session'
             SpringSessionUtils.application = grailsApplication
             ConfigObject conf = SpringSessionUtils.sessionConfig
 
             if (!conf || !conf.active) {
-                log.warn 'Spring session is disabled, not loading'
+                println 'Spring session is disabled, not loading'
                 return
             }
 
@@ -102,7 +102,7 @@ class SpringSessionGrailsPlugin extends Plugin {
                 persistMutable = conf.allow.persist.mutable as Boolean
             }
 
-            log.info 'Finished Spring Session configuration'
+            println 'Finished Spring Session configuration'
         }
     }
 }

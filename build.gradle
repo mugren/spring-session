@@ -8,7 +8,7 @@ buildscript {
     }
 }
 
-version "2.0.1"
+version "2.0.0"
 group "com.groggyman.grails"
 
 apply plugin:"eclipse"
