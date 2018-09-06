@@ -1,3 +1,6 @@
+##### Branch description
+Copy to master that servers as maven repo. Contains maven artifacts of the project.
+
 # Grails 3
 The [2.X version of the plugin](https://bintray.com/jeetmp3/plugins/spring-session/view) is compatible only with grails 3.
 
